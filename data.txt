@@ -1,0 +1,57 @@
+insert into location values
+(108,"Arlington",2008,3000),
+(109,"Arlington",2009,3400),
+(110,"Arlington",2010,4000),
+(208,"Dallas",2008,4500),
+(209,"Dallas",2009,4900),
+(210,"Dallas",2010,5200),                 
+(308,"FortWorth",2008,3500),            
+(309,"FortWorth",2009,3800),
+(310,"FortWorth",2010,4100);
+
+insert into Health_Centers values
+(11,2008,"Hospital","Arlington",60,"Cancer",108),
+(12,2008,"Hospital","Arlington",100,"general",108),
+(13,2009,"Rehab","Arlington",50,"Addiction",109),
+(21,2008,"Hospital","Dallas",70,"General",208),
+(22,2009,"Hospital","Dallas",80,"Cancer",209),
+(23,2010,"Rehab","Dallas",60,"Addiction",210),
+(31,2010,"Hospital","FortWorth",100,"Cancer",310),
+(32,2008,"Hospital","FortWorth",50,"General",308);
+
+insert into CO2_level values
+(1188,2008,362,108),
+(2288,2008,370,208),
+(3388,2008,375,308),
+(1199,2009,385,109),
+(2299,2009,365,209),
+(3399,2009,379,309),   
+(1110,2010,380,110),    
+(2210,2010,360,210),
+(3310,2010,370,310);
+
+insert into pollen_level values
+(11088,2008,145,108),
+(22088,2008,149,208),
+(33088,2008,150,308),
+(11099,2009,142,109),
+(22099,2009,155,209),
+(33099,2009,146,309),   
+(11010,2010,143,110),    
+(22010,2010,146,210),
+(33010,2010,147,310);
+
+insert into accidents values
+(11188,2008,10,108),
+(22288,2008,15,208),
+(33388,2008,20,308),
+(11199,2009,11,109),
+(22299,2009,16,209),
+(33399,2009,16,309),   
+(11110,2010,20,110),    
+(22210,2010,12,210),
+(33310,2010,14,310);
+
+insert into Survey_details values
+(1,"Arlington","2008/08/01",Asthma","Mining","vegetarian No Exercise","Yes","No",108,1002);
+

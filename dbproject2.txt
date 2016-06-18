@@ -1,0 +1,77 @@
+create table survey_details
+(
+S_Id int(5) not null,
+city varchar(10),
+date date,
+chronic_disease varchar(20),
+occupation varchar(15),
+nutrition varchar(150),
+smoking varchar(5),
+alcohol varchar(5),
+L_ID int(5),
+D_ID int(5),
+constraint PK1 primary key(S_ID),
+constraint FK1 foreign key(D_ID) references Chronic_diseases(D_ID),
+constraint FK2 foreign key(L_ID) references Location(L_ID)
+);
+
+create table Location
+(
+L_ID int(5) not null,
+Name varchar(10),
+Year year,
+Population int(10),
+constraint PK2 primary key(L_ID)
+);
+
+create table Health_centers
+(
+H_ID int(5) not null,
+Year year,
+type varchar(10),
+location varchar(10),
+capacity int(5),
+Specialization varchar(20),
+L_ID int(5),
+constraint PK3 primary key(H_ID),
+constraint FK3 foreign key(L_ID) references Location(L_ID)
+);
+
+create table Chronic_diseases
+(
+D_ID int(5) not null,
+Name varchar(20),
+constraint PK4 primary key(D_ID)
+);
+
+create table Co2_level
+(
+C_ID int(5),
+year year,
+level integer(5),
+L_ID int(5),
+constraint PK5 primary key(C_ID),
+constraint FK4 foreign key(L_ID) references Location(L_ID)
+);
+
+create table Pollen_level
+(
+P_ID int(5),
+year year,
+measurement int(5),
+L_ID int(5),
+constraint PK6 primary key(P_ID),
+constraint FK5 foreign key(L_ID) references Location(L_ID)
+);
+
+create table Accidents
+(
+A_ID int(5),
+year year,
+no_of_accidents int(5),
+L_ID int(5),
+constraint PK7 primary key(A_ID),
+constraint FK6 foreign key(L_ID) references Location(L_ID)
+);
+
+

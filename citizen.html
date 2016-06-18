@@ -1,0 +1,101 @@
+<html>
+<head>
+</head>
+<h1><font face = "Verdana" align="center" color="black" style="margin-left:auto;margin-right:auto;display:block;"> Enter citizen details </font></h1>
+<body bgcolor ="rosybrown" body>
+<form action="citizen.php" method="POST">
+<font face = "Calibri"><b> Survey date </b><hr align="left" width="200px"/>
+ ----Year------ Month ------- Day <br>
+<select name="year">
+<option value="default"></option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+</select>
+<select name="month">
+<option id="defaultm" value="defaultm"></option>
+<option id="January" value="January" >January</option>
+<option id="February" value="February" >February</option>
+<option id="March" value="March" >March</option>
+<option id="April" value="April" >April</option>
+<option id="May" value="May" >May</option>
+<option id="June" value="June" ">June</option>
+<option id="July" value="July" >July</option>
+<option id="August" value="August">August</option>
+<option id="September" value="September">September</option>
+<option id="October" value="October">October</option>
+<option id="November" value="November">November</option>
+<option id="December" value="December">December</option>
+</select>
+
+<select name="day">
+<option id="defaultd" value="defaultd"></option>
+<option id="one" value="one" >1</option>
+<option id="two" value="two" >2</option>
+<option id="three" value="three" >3</option>
+<option id="four" value="four" >4</option>
+<option id="five" value="five" >5</option>
+<option id="six" value="six" >6</option>
+<option id="seven" value="seven" >7</option>
+<option id="eight" value="eight" >8</option>
+<option id="nine" value="nine" >9</option>
+<option id="ten" value="ten" >10</option>
+<option id="eleven" value="eleven" >11</option>
+<option id="twelve" value="twelve" >12</option>
+<option id="thirteen" value="thirteen" >13</option>
+<option id="fourteen" value="fourteen" >14</option>
+<option id="fifteen" value="fifteen" >15</option>
+<option id="sixteen" value="sixteen" >16</option>
+<option id="seventeen" value="seventeen" >17</option>
+<option id="eighteen" value="eighteen" >18</option>
+<option id="nineteen" value="nineteen" >19</option>
+<option id="twenty" value="twenty" >20</option>
+<option id="twentyone" value="twentyone" >21</option>
+<option id="twentytwo" value="twentytwo" >22</option>
+<option id="twentythree" value="twentythree" >23</option>
+<option id="twentyfour" value="twentyfour" >24</option>
+<option id="twentyfive" value="twentyfive" >25</option>
+<option id="twentysix" value="twentysix" >26</option>
+<option id="twentyseven" value="twentyseven" >27</option>
+<option id="twentyeight" value="twentyeight" >28</option>
+<option id="twentynine" value="twentynine" >29</option>
+<option id="thirty" value="thirty" >30</option>
+<option id="thirtyone" value="thirtyone" >31</option>
+</select>
+<br></br><br><font face = "Calibri"><b>Location</b>
+<select name="city">
+  <option value=NULL></option>
+  <option value="Dallas">Dallas</option>
+  <option value="Fort Worth">Fort Worth</option>
+  <option value="Arlington">Arlington</option>
+</select></br>
+<br><b><font face = "Calibri"> Type of diet </font></b></br>
+<br><input type="radio" name="nutrition" value="r1"> Vegetarian </br>
+<br><input type="radio" name="nutrition" value="r2"> Non-Vegetarian </br>
+<br><b><font face = "Calibri">Smoker?</font></b></br>
+<br><input type="radio" name="smoke" value="r1"> yes </br>
+<br><input type="radio" name="smoke" value="r2"> no </br>
+<br></br><br><b><font face = "Calibri">Alcohol consumer?</font></b></br>
+<br><input type="radio" name="alc" value="r3"> yes </br>
+<br><input type="radio" name="alc" value="r4"> no </br>
+</br><br><font face = "Calibri"><b> Occupation</font></b>
+<select name ="job"> 
+  <option value=NULL></option>
+  <option value="Miner">Miner</option>
+  <option value="Farmer">Farmer</option>
+  <option value="Engineer">Engineer</option>
+  <option value="Doctor">Doctor</option>
+</select><br></br>
+<br><font face = "Calibri"><b>Chronic Disease</font></b>
+<select name ="disease"> 
+  <option value=NULL></option>
+  <option value="1001">Cancer</option>
+  <option value="1002">Asthma</option>
+  <option value="1003">Arthritis</option>
+  <option value="1004">Diabetes</option>
+</select></br><br></br>
+<input type="submit" style="font-face: 'Comic Sans MS'; font-size: larger; color: white; background-color: #20B2AA;margin-left:auto;margin-right:auto;display:block;" name="s" value="Submit">
+</form>
+<br></br><form action="insert.html" method="link"><input type="submit" style="font-face: 'Comic Sans MS'; font-size: larger; color: white; background-color: #20B2AA;margin-left:auto;margin-right:auto;display:block;" name="h" value="Back"></form>
+</body>
+</html>
